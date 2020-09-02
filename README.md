@@ -1,11 +1,50 @@
-## Automação Simples com JUnit e Selenium WebDriver
-<span style="color: green"> Some green text </span>
-![selenium-logo text-320x132](https://miro.medium.com/max/327/1*pdmSfsPk9iQmSyDFwFfzxQ.png)
+## Projeto para testes automatizados com Selenium 
+
+## Um pouco sobre a aplicação onde serão feitos os testes
+ 
+<p align="left">
+  <img src="https://pbs.twimg.com/profile_images/1057238424195923968/sPBdJODR_400x400.jpg" width="50" alt="accessibility text">
+</p>
+<p>Reportagem de:
+Babiana Mugnol, babiana.mugnol@rdgaucha.com.br</p>
+<p>Após vender a rede Croasonho em 2017, quando o negócio se tornou uma cadeia com 80 lojas em 17 Estados, os idealizadores voltam a campo com projeto inovador de franquia na área de saúde.
+Eduardo Silva e Gustavo Susin inauguram, na próxima terça-feira, a Haux, um projeto de R$ 5 milhões com a primeira clínica-modelo em Caxias. A parceria é com o médico Clayton Macedo, doutor em endocrinologia clínica, e outros sócios. O potencial mapeado para expansão é de mais de 200 unidades em cidades acima de 60 mil habitantes no Brasil.
+O novo modelo de franquia é focado em mudança intensiva de estilo de vida. A Haux abrirá na Rua Moreira César, 2.229, para trabalhar  a prevenção e o tratamento do excesso de peso, do diabetes e de doenças cardiovasculares. A estrutura também conta com academia. A nova marca será apresentada de forma online no dia 1º de setembro, às 19h,  com mediação da jornalista Laura Medina, especializada em saúde e bem-estar.
+</p>
+
+## Técnicas para testa a aplicação
+
+Para validar um sistema com inumeros cenários de teste como neste caso, é preciso ganhar velocidade, mas sem abrir mão também da qualidade. Os testes vou apresentar são apenas dois um pouco para demostrar como tirar proveito das técnicas de BDD e posteriormente apresentarei o desenvolvimento em selenium.
+
+## BDD como isso vai ajudar?
+BDD é uma técnica de desenvolvimento de software ágil que surge através de uma crítica de Dan North ao Test Driven Development(Desenvolvimento orientado a testes), onde ele visava otimizar o conceito de ‘verificação e validação’ já aplicado, e tornar mais eficiente a construção de cenários a serem testados e/ou desenvolvidos.
+
+## BDD cenário 1
+![alt text](logar.png)
+
+## Como fica após atomatizar o cenário 1 com Selenium e JUnit 
+
+![alt text](logarSelenium.png)
+
+
+## BDD cenário 2
+![alt text](cadastrar_usuario.png)
+
+## Como fica após atomatizar o cenário 2 com Selenium e JUnit 
+
+![alt text](cadastrar_usuario_selenium.png)
+
+
+## Ferramentas utilizadas para os testes
+![selenium-logo text-320x132](https://miro.medium.com/max/327/1*pdmSfsPk9iQmSyDFwFfzxQ.png)![alt text](Junit.png)
 
 ## Intalações necessarias para esse projeto
-Java versão 8 Update 261r ___
-IntelliJ IDEA Community Edition 2020.14 ___
-ChromeDriver
+<p>Java versão 8 Update 261r</p>
+<p>IntelliJ IDEA Community Edition 2020.14</p>
+<p>ChromeDriver</p>
+
+# Lembrar de configurar variaveis de ambiente
+![alt text](variaveis_ambiente.jpg)
 
 ## Características Selenium WebDriver:
 
@@ -134,7 +173,9 @@ JUnit é LIVRE.
 	devmedia.com.br   https://www.devmedia.com.br/introducao-aos-testes-funcionais-automatizados-com-junit-e-selenium-webdriver/28037
 	junit.org         https://junit.org/junit5/docs/current/user-guide/
 	wikipedia.org     https://pt.wikipedia.org/wiki/JUnit
-    Lucas G. Carvalho https://medium.com/editora-globo/introdu%C3%A7%C3%A3o-ao-selenium-webdriver-8ac2f9a8d9d0
+        Lucas G. Carvalho https://medium.com/editora-globo/introdu%C3%A7%C3%A3o-ao-selenium-webdriver-8ac2f9a8d9d0
+        Babiana Mugnol    pioneiro.clicrbs.com.br/rs/economia/caixa-forte/noticia/2020/08/idealizadores-de-franquia-nacional-com-novo-sonho-13001085.html
+
 	
 	
  
