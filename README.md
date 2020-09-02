@@ -1,5 +1,5 @@
 ## Automação Simples com JUnit e Selenium WebDriver
-
+<span style="color: green"> Some green text </span>
 ![selenium-logo text-320x132](https://miro.medium.com/max/327/1*pdmSfsPk9iQmSyDFwFfzxQ.png)
 
 ## Intalações necessarias para esse projeto
