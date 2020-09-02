@@ -13,7 +13,6 @@ O novo modelo de franquia é focado em mudança intensiva de estilo de vida. A H
 </p>
 
 ### Técnicas para testa a aplicação
-
 Para validar um sistema com inumeros cenários de teste como neste caso, é preciso ganhar velocidade, mas sem abrir mão também da qualidade. Os testes vou apresentar são apenas dois um pouco para demostrar como tirar proveito das técnicas de BDD e posteriormente apresentarei o desenvolvimento em selenium.
 
 ### BDD como isso vai ajudar?
@@ -22,16 +21,7 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 ### BDD cenário 1
 ![](img/logar.png)
 
-### Como fica após atomatizar o cenário 1 com Rest Assured e JUnit 
-
-![](img/login.png)
-
-
-
-## exemplo de teste
-![](img/teste.jpg)
-
-
+### Como fica após atomatizar o cenário 1 com Rest Assured e JUnit
 
 ## BDD cenário 2
 ![](img/cadastrar_usuario.png)
@@ -39,11 +29,12 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 ## Como fica após atomatizar o cenário 2 com Rest Assured e JUnit 
 #### Para manter mais organizado o código fiz em duas etapas esse registro primeiro eu coloquei as informações necessarias para ser registrado esse usuário  
 ![](img/corpoRegistro.png)
+
 #### Após isso eu realizo o cadastro desse novo usuário passando no body a estrutura que havia preparado anteriormento uma forma de identificar que estou realizando um registro é atraves do verbo POST antes do THEN().
 ![](img/registrar.png)
 
 
-## Ferramentas utilizadas para os testes
+### Ferramentas utilizadas para os testes
 ![](img/pom.png)
 
 ## Intalações necessarias para esse projeto
@@ -51,15 +42,11 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 <p>IntelliJ IDEA Community Edition 2020.14</p>
 
 
-### Lembrar de configurar variaveis de ambiente
+###### Lembrar de configurar variaveis de ambiente
 ![](img/variaveis_ambiente.jpg)
 
 ## Características Rest Assured:
-
-O REST-assegurado foi projetado para simplificar o teste e a validação de APIs REST e é altamente influenciado por técnicas de teste usadas em linguagens dinâmicas, 
-como Ruby e Groovy.
-A biblioteca tem suporte sólido para HTTP, começando, é claro, com os verbos e as operações HTTP padrão, mas também indo muito além desse básico.
-
+##### O Rest Assured nos permite testar serviços RESTful em Java de um jeito muito mais prático, basicamente, ele nos provê uma maneira de criar chamadas HTTP, como se fôssemos um cliente acessando a API. Suporta os métodos POST, GET, PUT, DELETE, OPTIONS, PATCH e HEAD e pode ser usado para validar e verificar a resposta dessas solicitações.
 
 
 ## Características JUnit: 
@@ -72,31 +59,12 @@ Esse framework facilita a criação e manutenção do código para a automação
 
 Com JUnit, o programador tem a possibilidade de usar esta ferramenta para criar um modelo padrão de testes, muitas vezes de forma automatizada.
 
-O teste de unidade testa o menor dos componentes de um sistema de maneira isolada. Cada uma dessas unidades define um conjunto de estímulos (chamada de métodos), e de dados de entrada e saída associados a cada estímulo. As entradas são parâmetros e as saídas são o valor de retorno, exceções ou o estado do objeto. Tipicamente um teste unitário executa um método individualmente e compara uma saída conhecida após o processamento da mesma. Por exemplo:
+O teste de unidade testa o menor dos componentes de um sistema de maneira isolada. Cada uma dessas unidades define um conjunto de estímulos (chamada de métodos), e de dados de entrada e saída associados a cada estímulo. As entradas são parâmetros e as saídas são o valor de retorno, exceções ou o estado do objeto. Tipicamente um teste unitário executa um método individualmente e compara uma saída conhecida após o processamento da mesma. 
+[](img/imagens.png)
 
-Assert.assertEquals(2, algumMetodo(1));
+## Comandos Rest Assured
+O Rest Assured nos permite testar serviços RESTful em Java de um jeito muito mais prático, basicamente, ele nos provê uma maneira de criar chamadas HTTP, como se fôssemos um cliente acessando a API. Suporta os métodos POST, GET, PUT, DELETE, OPTIONS, PATCH e HEAD e pode ser usado para validar e verificar a resposta dessas solicitações.
 
-## Exemplo de Primeiro Teste Usando Junit: 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import example.util.Calculator;
-import org.junit.jupiter.api.Test;
-
-class PrimeiroTestUsandoJunit{
-//fazendo um teste utilizando os poderes do JUnit
-int a=2;
-int b=3;
-int soma = a + b ;
-
-//anotação "@" junto com a palavra Test me permite executar o teste que verifica se a 5 é igual a soma
-@Test
-public void addition() {
-assertEquals(5, soma);
-    }
-}
-
-## Comandos Rest Assuredr
-
-	O Rest Assured nos permite testar serviços RESTful em Java de um jeito muito mais prático, basicamente, ele nos provê uma maneira de criar chamadas HTTP, como se fôssemos um cliente acessando a API. Suporta os métodos POST, GET, PUT, DELETE, OPTIONS, PATCH e HEAD e pode ser usado para validar e verificar a resposta dessas solicitações.
 ## Instalação através do gerenciador de dependências Maven: 
 
 Utilizei o Maven para facilitar a vida, ele vai cuidar da parte de gerenciamento de dependências. 
