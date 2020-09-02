@@ -1,4 +1,4 @@
-## Projeto para testes automatizados com Selenium 
+## Projeto para testes automatizados com Rst Assured 
 
 ## Um pouco sobre a aplicação onde serão feitos os testes
  
@@ -20,11 +20,17 @@ Para validar um sistema com inumeros cenários de teste como neste caso, é prec
 BDD é uma técnica de desenvolvimento de software ágil que surge através de uma crítica de Dan North ao Test Driven Development(Desenvolvimento orientado a testes), onde ele visava otimizar o conceito de ‘verificação e validação’ já aplicado, e tornar mais eficiente a construção de cenários a serem testados e/ou desenvolvidos.
 
 ## BDD cenário 1
-![alt text](logar.png)
+![alt text](img/logar.png)
 
 ## Como fica após atomatizar o cenário 1 com Selenium e JUnit 
 
 ![alt text](logarSelenium.png)
+
+
+
+## exemplo de teste
+![alt text](img/teste.jpg)
+
 
 
 ## BDD cenário 2
@@ -41,14 +47,18 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 ## Intalações necessarias para esse projeto
 <p>Java versão 8 Update 261r</p>
 <p>IntelliJ IDEA Community Edition 2020.14</p>
-<p>ChromeDriver</p>
 
-# Lembrar de configurar variaveis de ambiente
-![alt text](variaveis_ambiente.jpg)
 
-## Características Selenium WebDriver:
+### Lembrar de configurar variaveis de ambiente
+![alt text](img/variaveis_ambiente.jpg)
 
-A API Selenium WebDriver tem como principal objetivo automatizar ações do navegador, tais como submits de formulários, seleções em menus dropdown, digitação em campos texto, varredura de dados em elementos, HTML etc. Para entender melhor seus conceitos, a seguir, detalharemos algumas interfaces e outras classes principais que compõem o Selenium WebDriver.
+## Características Rest Assured:
+
+O REST-assegurado foi projetado para simplificar o teste e a validação de APIs REST e é altamente influenciado por técnicas de teste usadas em linguagens dinâmicas, 
+como Ruby e Groovy.
+A biblioteca tem suporte sólido para HTTP, começando, é claro, com os verbos e as operações HTTP padrão, mas também indo muito além desse básico.
+
+
 
 ## Características JUnit: 
 Origem: Wikipédia, a enciclopédia livre.
@@ -82,80 +92,14 @@ assertEquals(5, soma);
     }
 }
 
-## Comandos Selenium WebDriver
+## Comandos Rest Assuredr
 
-	// Fecha a janela corrente.
-	driver.close();
-
-	// Encontra o primeiro elemento de uma tela HTML através de um dado argumento.
-	driver.findElement(By by);
-
-	// Encontra todos os elementos de uma tela HTML através de um dado argumento.
-	driver.findElements(By by);
-
-	// Abre uma nova URL no navegador.
-	driver.get();
-
-	// Retorna uma string que contém a URL aberta pelo navegador.
-	driver.getCurrentUrl();
-
-	// Retorna o código fonte da última página aberta pelo navegador.
-	driver.getPageSource();
-
-	// Retorna o título da página aberta pelo navegador.
-	driver.getTitle();
-
-	// Retorna um identificador da janela em questão.
-	driver.getWindowHandle();
-
-	// Retorna identificadores que podem ser utilizados para movimentação entre janelas.
-	driver.getWindowHandles();
-
-	// Envia comandos futuros para uma janela (ou frame) diferente.
-	driver.switchTo();
-
-	// Permite gerenciar cookies do navegador, logs, timeouts etc.
-	driver.manage();
-
-	// Abstração que permite acessar o histórico e navegar para uma determinada URL.
-	driver.navigate();
-
-	// Fecha a instância do Selenium WebDriver e todas os navegadores associados.
-	driver.quit();
-
+	O Rest Assured nos permite testar serviços RESTful em Java de um jeito muito mais prático, basicamente, ele nos provê uma maneira de criar chamadas HTTP, como se fôssemos um cliente acessando a API. Suporta os métodos POST, GET, PUT, DELETE, OPTIONS, PATCH e HEAD e pode ser usado para validar e verificar a resposta dessas solicitações.
 ## Instalação através do gerenciador de dependências Maven: 
 
 Utilizei o Maven para facilitar a vida, ele vai cuidar da parte de gerenciamento de dependências. 
 
-Incluir as dependências do WebDriver, do JUnit e do AssertJ no pom.xml como mostro abaixo:
-
-<!-- Selenium WebDriver -->
-<dependency>
-	<groupId>org.seleniumhq.selenium</groupId>
-	<artifactId>selenium-java</artifactId>
-	<version>3.13.0</version>
-	<scope>test</scope>
-</dependency>
-<!-- JUnit -->
-<dependency>
-	<groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter-api</artifactId>
-	<version>5.2.0</version>
-	<scope>test</scope>
-</dependency>
-<dependency>
-	<groupId>org.junit.jupiter</groupId>
-	<artifactId>junit-jupiter-engine</artifactId>
-	<version>5.2.0</version>
-	<scope>test</scope>
-</dependency>
-<!-- AssertJ -->
-<dependency>
-	<groupId>org.assertj</groupId>
-	<artifactId>assertj-core</artifactId>
-	<version>3.10.0</version>
-	<scope>test</scope>
-</dependency>
+[](img/pom.png)
 
 ## Algumas vantagens de se utilizar JUnit:
 Permite a criação rápida de código de teste enquanto possibilita um aumento na qualidade do sistema sendo desenvolvido e testado;
