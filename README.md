@@ -52,16 +52,13 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 Esse framework facilita a criação e manutenção do código para a automação de testes com apresentação dos resultados. Com ele, pode ser verificado se cada método de uma classe funciona da forma esperada, exibindo possíveis erros ou falhas podendo ser utilizado tanto para a execução de baterias de testes como para extensão.
 
 Com JUnit, o programador tem a possibilidade de usar esta ferramenta para criar um modelo padrão de testes, muitas vezes de forma automatizada.
-# AAAaqui
-O teste de unidade testa o menor dos componentes de um sistema de maneira isolada. Cada uma dessas unidades define um conjunto de estímulos (chamada de métodos), e de dados de entrada e saída associados a cada estímulo. As entradas são parâmetros e as saídas são o valor de retorno, exceções ou o estado do objeto. Tipicamente um teste unitário executa um método individualmente e compara uma saída conhecida após o processamento da mesma. 
-![](img/images.png)
 
-## Comandos Rest Assured
+## Comandos usados em Rest Assured
 O Rest Assured nos permite testar serviços RESTful em Java de um jeito muito mais prático, basicamente, ele nos provê uma maneira de criar chamadas HTTP, como se fôssemos um cliente acessando a API. Suporta os métodos POST, GET, PUT, DELETE, OPTIONS, PATCH e HEAD e pode ser usado para validar e verificar a resposta dessas solicitações.
 
 ## Instalação através do gerenciador de dependências Maven: 
 
-Utilizei o Maven para facilitar a vida, ele vai cuidar da parte de gerenciamento de dependências. 
+Utilizei o Maven para facilitar, ele cuida da parte de gerenciamento de dependências. 
 
 ![](img/pom.png)
 
