@@ -33,10 +33,6 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 #### Após isso eu realizo o cadastro desse novo usuário passando no body a estrutura que havia preparado anteriormento uma forma de identificar que estou realizando um registro é atraves do verbo POST antes do THEN().
 ![](img/registrar.png)
 
-
-### Ferramentas utilizadas para os testes
-![](img/pom.png)
-
 ## Intalações necessarias para esse projeto
 <p>Java versão 8 Update 261r</p>
 <p>IntelliJ IDEA Community Edition 2020.14</p>
@@ -87,7 +83,7 @@ JUnit é LIVRE.
 	devmedia.com.br   https://www.devmedia.com.br/introducao-aos-testes-funcionais-automatizados-com-junit-e-selenium-webdriver/28037
 	junit.org         https://junit.org/junit5/docs/current/user-guide/
 	wikipedia.org     https://pt.wikipedia.org/wiki/JUnit
-        Lucas G. Carvalho https://medium.com/editora-globo/introdu%C3%A7%C3%A3o-ao-selenium-webdriver-8ac2f9a8d9d0
+        genbeta           https://www.genbeta.com/desarrollo/rest-assured-framework-para-testear-y-validar-nuestros-servicios-rest
         Babiana Mugnol    pioneiro.clicrbs.com.br/rs/economia/caixa-forte/noticia/2020/08/idealizadores-de-franquia-nacional-com-novo-sonho-13001085.html
 
 	
