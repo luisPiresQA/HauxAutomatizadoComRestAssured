@@ -38,7 +38,7 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 <p>IntelliJ IDEA Community Edition 2020.14</p>
 
 
-###### Lembrar de configurar variaveis de ambiente
+###### Lembrar de configurar as variáveis de ambiente
 ![](img/variaveis_ambiente.jpg)
 
 ## Características Rest Assured:
