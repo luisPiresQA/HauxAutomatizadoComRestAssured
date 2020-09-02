@@ -1,6 +1,6 @@
 ## Projeto para testes automatizados com Rst Assured 
 
-## Um pouco sobre a aplicação onde serão feitos os testes
+#### Um pouco sobre a aplicação onde serão feitos os testes
  
 <p align="left">
   <img src="https://pbs.twimg.com/profile_images/1057238424195923968/sPBdJODR_400x400.jpg" width="50" alt="accessibility text">
@@ -12,37 +12,39 @@ Eduardo Silva e Gustavo Susin inauguram, na próxima terça-feira, a Haux, um pr
 O novo modelo de franquia é focado em mudança intensiva de estilo de vida. A Haux abrirá na Rua Moreira César, 2.229, para trabalhar  a prevenção e o tratamento do excesso de peso, do diabetes e de doenças cardiovasculares. A estrutura também conta com academia. A nova marca será apresentada de forma online no dia 1º de setembro, às 19h,  com mediação da jornalista Laura Medina, especializada em saúde e bem-estar.
 </p>
 
-## Técnicas para testa a aplicação
+### Técnicas para testa a aplicação
 
 Para validar um sistema com inumeros cenários de teste como neste caso, é preciso ganhar velocidade, mas sem abrir mão também da qualidade. Os testes vou apresentar são apenas dois um pouco para demostrar como tirar proveito das técnicas de BDD e posteriormente apresentarei o desenvolvimento em selenium.
 
-## BDD como isso vai ajudar?
+### BDD como isso vai ajudar?
 BDD é uma técnica de desenvolvimento de software ágil que surge através de uma crítica de Dan North ao Test Driven Development(Desenvolvimento orientado a testes), onde ele visava otimizar o conceito de ‘verificação e validação’ já aplicado, e tornar mais eficiente a construção de cenários a serem testados e/ou desenvolvidos.
 
-## BDD cenário 1
-![alt text](img/logar.png)
+### BDD cenário 1
+![](img/logar.png)
 
-## Como fica após atomatizar o cenário 1 com Selenium e JUnit 
+### Como fica após atomatizar o cenário 1 com Rest Assured e JUnit 
 
-![alt text](logarSelenium.png)
+![](img/login.png)
 
 
 
 ## exemplo de teste
-![alt text](img/teste.jpg)
+![](img/teste.jpg)
 
 
 
 ## BDD cenário 2
-![alt text](cadastrar_usuario.png)
+![](img/cadastrar_usuario.png)
 
-## Como fica após atomatizar o cenário 2 com Selenium e JUnit 
-
-![alt text](cadastrar_usuario_selenium.png)
+## Como fica após atomatizar o cenário 2 com Rest Assured e JUnit 
+#### Para manter mais organizado o código fiz em duas etapas esse registro primeiro eu coloquei as informações necessarias para ser registrado esse usuário  
+![](img/corpoRegistro.png)
+#### Após isso eu realizo o cadastro desse novo usuário passando no body a estrutura que havia preparado anteriormento uma forma de identificar que estou realizando um registro é atraves do verbo POST antes do THEN().
+![](img/registrar.png)
 
 
 ## Ferramentas utilizadas para os testes
-![alt text](img/pom.png)
+![](img/pom.png)
 
 ## Intalações necessarias para esse projeto
 <p>Java versão 8 Update 261r</p>
@@ -50,7 +52,7 @@ BDD é uma técnica de desenvolvimento de software ágil que surge através de u
 
 
 ### Lembrar de configurar variaveis de ambiente
-![alt text](img/variaveis_ambiente.jpg)
+![](img/variaveis_ambiente.jpg)
 
 ## Características Rest Assured:
 
@@ -99,7 +101,7 @@ assertEquals(5, soma);
 
 Utilizei o Maven para facilitar a vida, ele vai cuidar da parte de gerenciamento de dependências. 
 
-[](img/pom.png)
+![](img/pom.png)
 
 ## Algumas vantagens de se utilizar JUnit:
 Permite a criação rápida de código de teste enquanto possibilita um aumento na qualidade do sistema sendo desenvolvido e testado;
